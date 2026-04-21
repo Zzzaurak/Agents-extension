@@ -1,0 +1,4 @@
+interface:
+  display_name: "MinerU PDF Reader"
+  short_description: "Route PDFs through MinerU with automatic v4 or v1 parsing"
+  default_prompt: "Use $mineru-pdf-reader to convert a local PDF or PDF URL with MinerU, automatically using v4 when my API key is configured."

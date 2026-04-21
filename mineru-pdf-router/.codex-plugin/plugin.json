@@ -1,0 +1,46 @@
+{
+  "name": "mineru-pdf-router",
+  "version": "0.2.1",
+  "description": "Convert local PDFs or remote document URLs through MinerU, automatically using the v4 precision API when MINERU_API_KEY is configured and falling back to the v1 lightweight Agent API otherwise.",
+  "author": {
+    "name": "ao",
+    "url": "https://mineru.net/"
+  },
+  "homepage": "https://mineru.net/apiManage/docs",
+  "repository": "https://mineru.net/apiManage/docs",
+  "license": "MIT",
+  "keywords": [
+    "mineru",
+    "pdf",
+    "markdown",
+    "mcp",
+    "document-parsing",
+    "token",
+    "precision-extract"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "MinerU PDF Router",
+    "shortDescription": "Parse PDFs to Markdown with automatic MinerU v4/v1 routing",
+    "longDescription": "Route local PDFs or supported document URLs through MinerU, automatically using the v4 precision API with a configured API key and otherwise falling back to the v1 lightweight Agent API. For v4, download the result zip archive and read full.md; for v1, fetch the Markdown CDN result directly. Use this when content understanding matters more than visual layout fidelity.",
+    "developerName": "ao",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://mineru.net/apiManage/docs",
+    "privacyPolicyURL": "https://mineru.net/",
+    "termsOfServiceURL": "https://mineru.net/",
+    "defaultPrompt": [
+      "Convert this local PDF with MinerU, then summarize the Markdown.",
+      "Read this PDF URL through MinerU, automatically using v4 if my API key is configured.",
+      "Use MinerU first, then tell me the key risks and recommendations in this document."
+    ],
+    "brandColor": "#D94A1E",
+    "composerIcon": "./assets/mineru-pdf-router-small.svg",
+    "logo": "./assets/mineru-pdf-router-logo.svg",
+    "screenshots": []
+  }
+}

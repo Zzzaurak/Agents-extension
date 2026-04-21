@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mineru-pdf-router": {
+      "command": "python3",
+      "args": [
+        "./scripts/mineru_mcp_server.py"
+      ],
+      "env": {
+        "MINERU_API_BASE": "https://mineru.net"
+      }
+    }
+  }
+}
