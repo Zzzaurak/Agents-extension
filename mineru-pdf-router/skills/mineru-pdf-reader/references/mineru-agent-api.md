@@ -32,6 +32,13 @@ Sources:
 - On this machine, `/Users/ao/miniforge3/bin/python3` is used because it is Python 3.13 and has `requests` installed.
 - `/usr/bin/python3` and `/opt/homebrew/bin/python3` may be visible to GUI-launched processes, but they do not currently have `requests` installed here.
 
+## Network Approval Notes
+
+- MinerU v4 requires outbound HTTPS to `https://mineru.net/api/v4/file-urls/batch`, `https://mineru.net/api/v4/extract/task/batch`, `https://mineru.net/api/v4/extract-results/batch/{batch_id}`, and the returned result archive URL.
+- MinerU v1 requires outbound HTTPS to the v1 Agent endpoints and the returned `markdown_url`.
+- In Codex sandboxed sessions with network disabled, failures that mention inability to reach MinerU endpoints or result URLs should be treated as network-permission failures.
+- When that happens, request network approval and retry the same MinerU parse operation instead of changing to local PDF reading or stopping.
+
 ## v1 Lightweight Notes
 
 - Endpoints:

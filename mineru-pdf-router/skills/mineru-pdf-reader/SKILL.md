@@ -22,10 +22,14 @@ Convert supported documents through MinerU before reading them as model-friendly
    - `source_type="remote_url"` for a remote PDF or document URL
    - `file_name` only when the remote URL lacks a reliable filename
    - `page_range` only when you need a subset of PDF pages
-4. Read the returned Markdown, not the original PDF bytes.
+4. Handle sandboxed network access explicitly.
+   - MinerU parsing requires outbound HTTPS access to `mineru.net` and result archive/CDN URLs.
+   - If the MinerU call fails because the sandbox cannot reach `https://mineru.net/api/v4/file-urls/batch`, another MinerU API endpoint, or the returned archive URL, immediately request network approval and retry the same MinerU request.
+   - Do not fall back to guessing from the PDF, and do not stop after the first sandbox network failure when network approval can solve it.
+5. Read the returned Markdown, not the original PDF bytes.
    - On v1, the tool downloads the Markdown from `markdown_url`.
    - On v4, the tool downloads `full_zip_url` and extracts `full.md`.
-5. In the final answer:
+6. In the final answer:
    - Say that the content came from MinerU Markdown output and mention whether it used v1 or v4.
    - Mention relevant limits or warnings from the tool.
    - Base your summary, Q&A, or advice on the Markdown output.
@@ -34,6 +38,7 @@ Convert supported documents through MinerU before reading them as model-friendly
 
 - Treat MinerU output as semantic text extraction. Do not claim layout fidelity.
 - If the user asks how to enable v4 precision parsing, point them to `~/.codex/mineru-pdf-router.env`.
+- If a request fails with sandbox/network errors, ask for outbound network approval for MinerU and retry before changing strategy.
 - If the tool reports preflight or API limits, explain the limit and recommend a smaller `page_range`, a split PDF, or a different workflow.
 - For remote URLs, do not assume local preflight happened; the tool only preflights local files.
 - For non-PDF supported files, keep the same behavior: content extraction first, no promises about visual fidelity.
