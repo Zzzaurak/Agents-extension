@@ -1,12 +1,14 @@
 {
   "mcpServers": {
     "mineru-pdf-router": {
-      "command": "python3",
+      "command": "/Users/ao/miniforge3/bin/python3",
       "args": [
         "./scripts/mineru_mcp_server.py"
       ],
+      "cwd": ".",
       "env": {
-        "MINERU_API_BASE": "https://mineru.net"
+        "MINERU_API_BASE": "https://mineru.net",
+        "PYTHONUNBUFFERED": "1"
       }
     }
   }

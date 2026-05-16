@@ -1,6 +1,6 @@
 {
   "name": "mineru-pdf-router",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Convert local PDFs or remote document URLs through MinerU, automatically using the v4 precision API when MINERU_API_KEY is configured and falling back to the v1 lightweight Agent API otherwise.",
   "author": {
     "name": "ao",

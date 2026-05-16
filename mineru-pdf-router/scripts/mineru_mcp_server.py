@@ -12,7 +12,7 @@ from mineru_agent_client import DEFAULT_TIMEOUT_SEC, MinerUAgentClient, MinerUCl
 
 SERVER_INFO = {
     "name": "mineru-pdf-router",
-    "version": "0.2.1",
+    "version": "0.2.2",
 }
 
 TOOL_DEFINITION = {
