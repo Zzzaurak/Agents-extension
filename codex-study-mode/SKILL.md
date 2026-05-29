@@ -31,7 +31,7 @@ If the user has already provided enough information, restate it briefly and proc
 
 ## Next Step Shortcut
 
-When the user writes `[$codex-study-mode](/Users/ao/.codex/skills/codex-study-mode/SKILL.md) 下一步`, `$codex-study-mode 下一步`, `按学习skill下一步`, or `按skill下一步`, continue the current learning route:
+When the user writes `[$codex-study-mode](...) 下一步`, `$codex-study-mode 下一步`, `按学习skill下一步`, or `按skill下一步`, continue the current learning route:
 
 - Continue the next unfinished teaching stage.
 - If the previous response stopped mid-stage, continue that stage.

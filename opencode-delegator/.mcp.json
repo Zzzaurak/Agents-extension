@@ -7,8 +7,7 @@
       ],
       "cwd": ".",
       "env": {
-        "PYTHONUNBUFFERED": "1",
-        "OPENCODE_DELEGATOR_ENV": "/Users/ao/.config/opencode/opencode-delegator.env"
+        "PYTHONUNBUFFERED": "1"
       }
     }
   }

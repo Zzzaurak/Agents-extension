@@ -4,11 +4,12 @@ Use this reference when the user chooses `根据文献学习` or asks to learn f
 
 ## Source Project
 
-The expected project root is:
+The expected project root is usually one of:
 
-`/Users/ao/plugins/research-literature-pipeline/projects/<slug>/`
+- `research-literature-pipeline/projects/<slug>/` inside the current workspace.
+- A user-provided absolute or relative project path.
 
-If the user provides a slug, resolve it under that directory. If the user provides an absolute or relative path, use that path after verifying it exists.
+If the user provides a slug, first look for `research-literature-pipeline/projects/<slug>/` from the current workspace and nearby project roots. If the user provides an absolute or relative path, use that path after verifying it exists.
 
 ## Preferred Reading Order
 

@@ -11,7 +11,7 @@ Convert supported documents through MinerU before reading them as model-friendly
 
 1. Decide whether the task is content-first or layout-first.
    - If the user wants summary, extraction, analysis, or Q&A, call the `mineru_parse_document` MCP tool first.
-   - If the user wants to inspect layout, spacing, tables-as-rendered, screenshots, or page visuals, use `$pdf` at `/Users/ao/.codex/skills/pdf/SKILL.md` instead.
+   - If the user wants to inspect layout, spacing, tables-as-rendered, screenshots, or page visuals, use the `pdf` skill instead when available.
    - If both matter, use MinerU first for semantic extraction, then use `$pdf` for visual verification.
 2. Know the routing rule before you call the tool.
    - MinerU reads `~/.codex/mineru-pdf-router.env`.

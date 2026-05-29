@@ -1,0 +1,30 @@
+{
+  "name": "agents-extension",
+  "version": "0.1.0",
+  "description": "Install personal Codex plugins and skills from this repository.",
+  "license": "MIT",
+  "bin": {
+    "agents-extension": "./bin/agents-extension.js"
+  },
+  "files": [
+    "bin/agents-extension.js",
+    "codex-study-mode/SKILL.md",
+    "codex-study-mode/agents/",
+    "codex-study-mode/references/",
+    "mineru-pdf-router/.codex-plugin/",
+    "mineru-pdf-router/.mcp.json",
+    "mineru-pdf-router/assets/",
+    "mineru-pdf-router/scripts/mineru_agent_client.py",
+    "mineru-pdf-router/scripts/mineru_mcp_server.py",
+    "mineru-pdf-router/skills/",
+    "opencode-delegator/.codex-plugin/",
+    "opencode-delegator/.mcp.json",
+    "opencode-delegator/assets/",
+    "opencode-delegator/scripts/opencode_mcp_server.py",
+    "opencode-delegator/skills/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16.7"
+  }
+}

@@ -29,7 +29,7 @@ Sources:
 
 - `.mcp.json` must set `cwd` to `.` so relative script paths resolve from the installed plugin directory, matching Codex's bundled plugin pattern.
 - The MCP server should use an absolute Python executable path in GUI environments because the app process may not inherit the interactive shell `PATH`.
-- On this machine, `/Users/ao/miniforge3/bin/python3` is used because it is Python 3.13 and has `requests` installed.
+- The MCP server runs with `python3` from `PATH`; use a Python environment that has `requests` installed.
 - `/usr/bin/python3` and `/opt/homebrew/bin/python3` may be visible to GUI-launched processes, but they do not currently have `requests` installed here.
 
 ## Network Approval Notes

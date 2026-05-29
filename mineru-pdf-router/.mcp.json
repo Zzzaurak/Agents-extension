@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "mineru-pdf-router": {
-      "command": "/Users/ao/miniforge3/bin/python3",
+      "command": "python3",
       "args": [
         "./scripts/mineru_mcp_server.py"
       ],

@@ -1,6 +1,6 @@
 # User Profile
 
-This profile is derived from `/Users/ao/plugins/my_base.md` and should guide the teaching level.
+This profile captures the user's preferred teaching level and should guide the teaching style.
 
 ## Physics Background
 
