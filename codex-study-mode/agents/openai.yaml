@@ -1,0 +1,8 @@
+interface:
+  display_name: "Codex Study Mode"
+  short_description: "Stage-based Chinese learning for physics and papers"
+  brand_color: "#2563EB"
+  default_prompt: "Use $codex-study-mode to help me learn a topic step by step."
+
+policy:
+  allow_implicit_invocation: false

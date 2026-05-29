@@ -1,0 +1,3 @@
+[submodule "research-literature-pipeline"]
+	path = research-literature-pipeline
+	url = git@github.com:Zzzaurak/research-literature-pipeline.git

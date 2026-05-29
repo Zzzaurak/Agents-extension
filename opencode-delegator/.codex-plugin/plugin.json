@@ -1,0 +1,40 @@
+{
+  "name": "opencode-delegator",
+  "version": "0.1.0",
+  "description": "Delegate text-heavy, low-reasoning Codex side work to the local opencode CLI.",
+  "author": {
+    "name": "ao"
+  },
+  "homepage": "https://opencode.ai/docs/cli/",
+  "repository": "https://opencode.ai/docs/cli/",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "delegation",
+    "mcp",
+    "subagent",
+    "token-control"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenCode Delegator",
+    "shortDescription": "Hand text-heavy routine work to opencode.",
+    "longDescription": "OpenCode Delegator lets Codex call the local opencode CLI through MCP for large text reading, extraction, summarization, and other low-difficulty routine work while keeping the main Codex thread compact. It is opt-in only and is not used for multimodal tasks.",
+    "developerName": "ao",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://opencode.ai/docs/cli/",
+    "privacyPolicyURL": "https://opencode.ai/",
+    "termsOfServiceURL": "https://opencode.ai/",
+    "defaultPrompt": [
+      "Use OpenCode Delegator to summarize these logs.",
+      "Ask opencode to scan these text files first.",
+      "Delegate this large extraction pass to opencode."
+    ],
+    "brandColor": "#111827",
+    "screenshots": []
+  },
+  "mcpServers": "./.mcp.json"
+}

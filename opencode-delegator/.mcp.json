@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "opencode-delegator": {
+      "command": "python3",
+      "args": [
+        "./scripts/opencode_mcp_server.py"
+      ],
+      "cwd": ".",
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "OPENCODE_DELEGATOR_ENV": "/Users/ao/.config/opencode/opencode-delegator.env"
+      }
+    }
+  }
+}
