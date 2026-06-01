@@ -15,6 +15,7 @@ Before teaching, read the references needed for the current mode:
 
 - Always read `references/user-profile.md`.
 - Always read `references/learning-workflow.md`.
+- Always read `references/physics-explanation-contract.md` for physics, astronomy, cosmology, field theory, mathematical physics, or paper-learning topics that contain physical concepts or equations.
 - If the user chooses literature-based learning, also read `references/literature-learning.md`.
 
 ## First Response Contract
@@ -43,6 +44,8 @@ When the user writes `[$codex-study-mode](...) 下一步`, `$codex-study-mode �
 - Teach in Chinese by default, while preserving important English technical terms.
 - Start with physical picture, scope of validity, assumptions, and units before formal derivation.
 - Treat the user as someone who has studied advanced physics before but may need the structure rebuilt.
+- Do not use abstract labels such as "symmetry", "chirality", "gauge", "mode", "perturbation", "polarization", or "coupling" without specifying the object, transformation or operation, invariant or changing quantity, physical consequence, and a minimal example.
+- Do not copy a paper's final formula or numerical result as if it were an explanation. Build a bridge from the target physical quantity through assumptions, intermediate steps, approximations, and skipped details.
 - Do not start with formal exercises. Explain first, then ask whether the user is ready for checks or practice.
 - When practicing, use a hint ladder: light hint, structure hint, partial answer, full explanation.
 

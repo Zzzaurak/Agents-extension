@@ -31,6 +31,8 @@ Before teaching content, create a stage route. Keep it concrete and ordered:
 
 For a broad topic, split the route into sessions. For a narrow topic, split into two or three short stages.
 
+For physics-heavy topics, the route must include where the `physics-explanation-contract.md` will be applied: core concepts, derivations, paper formulas, and abstract terms.
+
 ## Next Step Protocol
 
 If the user says `下一步` while explicitly invoking this skill, continue according to conversation state:
@@ -49,11 +51,24 @@ When teaching a stage:
 - Start with the physical picture or research motivation.
 - Name the relevant quantities and units.
 - State the assumptions and validity range.
+- For every abstract physical term, apply the object / operation / invariant / consequence / example check from `physics-explanation-contract.md`.
+- For every paper formula or complex result, explain the target quantity, assumptions, intermediate bridge, approximations, and what is being skipped.
 - Explain equations line by line only when they are central.
 - Use one concrete example before generalizing.
 - End with a short checkpoint summary.
 
 Do not overload a single response. Prefer "teach a chunk, then pause" over a full lecture.
+
+## Explanation Quality Gate
+
+Before sending a teaching response, check it against these failure modes:
+
+- It uses a label like "symmetry", "chirality", "gauge", "mode", "perturbation", "polarization", or "coupling" without saying what object is being transformed, split, projected, or coupled.
+- It says "one can show", "after calculation", "the paper obtains", or equivalent language without giving a minimal bridge.
+- It gives a metaphorical physical picture without the variables, states, or observables that make the picture calculable.
+- It jumps from a paper claim to a final equation without identifying assumptions and approximations.
+
+If any failure mode is present, revise the response before sending.
 
 ## Practice Gate
 
