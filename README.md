@@ -28,7 +28,8 @@ npx github:Zzzaurak/Agents-extension install python-project-design
 
 The installer:
 
-- copies plugins into `~/.agents/plugins/plugins/`;
+- copies plugins into `~/plugins/`, matching the personal marketplace's
+  `./plugins/<name>` source paths;
 - creates or updates `~/.agents/plugins/marketplace.json`;
 - copies skills into `~/.codex/skills/`.
 
@@ -38,6 +39,10 @@ Override destinations when needed:
 npx github:Zzzaurak/Agents-extension install all --codex-home ~/.codex
 npx github:Zzzaurak/Agents-extension install all --marketplace-root ~/.agents/plugins
 ```
+
+For a marketplace at `<root>/.agents/plugins`, the installer copies plugins to
+`<root>/plugins/`. Other custom marketplace directories store copies in their
+own `plugins/` subdirectory.
 
 Preview changes without writing files:
 

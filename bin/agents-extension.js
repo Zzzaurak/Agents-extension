@@ -234,7 +234,14 @@ function install(options) {
   const names = selectedItems(options.items);
   const pluginNames = names.filter((name) => ITEMS[name].kind === "plugin");
   const skillNames = names.filter((name) => ITEMS[name].kind === "skill");
-  const pluginRoot = path.join(options.marketplaceRoot, "plugins");
+  // Codex resolves sources from the project root for .agents/plugins catalogs.
+  const marketplaceParent = path.dirname(options.marketplaceRoot);
+  const isCodexMarketplace = path.basename(options.marketplaceRoot) === "plugins"
+    && path.basename(marketplaceParent) === ".agents";
+  const marketplaceProjectRoot = isCodexMarketplace
+    ? path.dirname(marketplaceParent)
+    : options.marketplaceRoot;
+  const pluginRoot = path.join(marketplaceProjectRoot, "plugins");
   const skillRoot = path.join(options.codexHome, "skills");
 
   for (const name of pluginNames) {
