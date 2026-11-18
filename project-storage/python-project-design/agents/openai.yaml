@@ -1,0 +1,3 @@
+interface:
+  display_name: "Python 项目设计"
+  short_description: "用清晰的业务类型、声明式计算和显式 I/O 边界设计与审查日常 Python 项目"

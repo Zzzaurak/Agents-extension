@@ -18,6 +18,7 @@ venv/
 env/
 
 # Editor and temporary files
+/.codex-pet-runs/
 *.swp
 *.swo
 *~
@@ -25,6 +26,7 @@ env/
 *.temp
 
 # Local secrets and runtime logs
+*.env
 .env
 .env.local
 .env.*.local

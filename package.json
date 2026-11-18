@@ -22,6 +22,9 @@
     "opencode-delegator/assets/",
     "opencode-delegator/scripts/opencode_mcp_server.py",
     "opencode-delegator/skills/",
+    "project-storage/python-project-design/SKILL.md",
+    "project-storage/python-project-design/agents/openai.yaml",
+    "project-storage/python-project-design/references/*.md",
     "README.md"
   ],
   "engines": {
