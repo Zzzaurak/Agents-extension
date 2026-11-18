@@ -25,6 +25,9 @@
     "project-storage/python-project-design/SKILL.md",
     "project-storage/python-project-design/agents/openai.yaml",
     "project-storage/python-project-design/references/*.md",
+    "project-storage/react-frontend-design/SKILL.md",
+    "project-storage/react-frontend-design/agents/openai.yaml",
+    "project-storage/react-frontend-design/references/*.md",
     "README.md"
   ],
   "engines": {

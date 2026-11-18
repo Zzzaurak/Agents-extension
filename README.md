@@ -7,7 +7,7 @@ Personal Codex extensions, standalone skills, and a linked literature workflow p
 - `mineru-pdf-router`: a Codex plugin that routes PDF/document parsing through MinerU and exposes an MCP tool for Markdown extraction.
 - `opencode-delegator`: a Codex plugin that delegates explicit text-heavy routine work to the local `opencode` CLI through MCP.
 - `codex-study-mode`: a standalone Codex skill for staged Chinese teaching and literature-project-based learning.
-- [`project-storage`](project-storage/python-project-design/SKILL.md): Python project design skill for APIs, scripts, and data workflows.
+- `project-storage`: standalone skills for [Python project design](project-storage/python-project-design/SKILL.md) and [React frontend design](project-storage/react-frontend-design/SKILL.md).
 - `research-literature-pipeline`: a Git submodule for the literature workflow repo.
 
 ## Install With npx
@@ -23,7 +23,7 @@ Install selected items:
 ```bash
 npx github:Zzzaurak/Agents-extension install mineru-pdf-router opencode-delegator
 npx github:Zzzaurak/Agents-extension install codex-study-mode
-npx github:Zzzaurak/Agents-extension install python-project-design
+npx github:Zzzaurak/Agents-extension install python-project-design react-frontend-design
 ```
 
 The installer:

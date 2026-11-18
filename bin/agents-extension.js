@@ -26,9 +26,13 @@ const ITEMS = {
     kind: "skill",
     source: path.join(repoRoot, "project-storage", "python-project-design"),
   },
+  "react-frontend-design": {
+    kind: "skill",
+    source: path.join(repoRoot, "project-storage", "react-frontend-design"),
+  },
 };
 
-const DEFAULT_ITEMS = ["mineru-pdf-router", "opencode-delegator", "codex-study-mode", "python-project-design"];
+const DEFAULT_ITEMS = Object.keys(ITEMS);
 
 function usage(exitCode = 0) {
   const out = exitCode === 0 ? process.stdout : process.stderr;
@@ -41,6 +45,7 @@ Items:
   opencode-delegator
   codex-study-mode
   python-project-design
+  react-frontend-design
 
 Examples:
   npx github:Zzzaurak/Agents-extension install all
